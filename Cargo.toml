@@ -30,6 +30,8 @@ tokio-util = { version = "0.7", features = ["io"] }
 bytes = "1"
 http-body-util = "0.1"
 validator = { version = "0.18", features = ["derive"] }
+rand = "0.8"
+async-trait = "0.1"
 
 [dev-dependencies]
 axum-test = "15"

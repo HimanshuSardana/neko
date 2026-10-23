@@ -1,6 +1,8 @@
 mod config;
 mod db;
 mod models;
+mod auth;
+mod routes;
 
 use axum::{routing::get, Json, Router};
 use serde_json::{json, Value};
@@ -25,6 +27,7 @@ fn router(state: AppState) -> Router {
     Router::new()
         .route("/health", get(health))
         .route("/api/health", get(health))
+        .nest("/api", routes::api_router())
         .with_state(state)
         .layer(CorsLayer::permissive())
         .layer(TraceLayer::new_for_http())
