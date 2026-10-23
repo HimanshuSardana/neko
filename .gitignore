@@ -1,5 +1,7 @@
 /target
 .env
+*.db-shm
+*.db-wal
 *.db
 *.db-journal
 *.sqlite
