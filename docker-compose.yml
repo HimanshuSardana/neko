@@ -1,0 +1,13 @@
+services:
+  neko:
+    build: .
+    ports:
+      - "3000:3000"
+    environment:
+      DATABASE_URL: sqlite:///app/data/neko.db?mode=rwc
+      JWT_SECRET: ${JWT_SECRET:-change-me-to-a-long-random-secret-min-32-chars}
+      MEDIA_ROOT: /app/media
+      RUST_LOG: neko=debug
+    volumes:
+      - ./media:/app/media
+      - ./data:/app/data

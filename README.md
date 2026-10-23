@@ -6,10 +6,10 @@ Rust + Axum + SQLite. Single binary, no external DB required.
 ## Features (v1 roadmap)
 
 - [x] Project scaffold + health endpoint
-- [ ] SQLite schema (users, libraries, anime, manga, books, progress)
-- [ ] Auth (register/login, Argon2 + JWT, admin/user roles)
-- [ ] Library catalog APIs (CRUD libraries, list series/episodes/chapters/books)
-- [ ] Streaming (HTTP Range for video, page/file serving for manga/books) + progress tracking + library scan
+- [x] SQLite schema (users, libraries, anime, manga, books, progress)
+- [x] Auth (register/login, Argon2 + JWT, admin/user roles)
+- [x] Library catalog APIs (CRUD libraries, list series/episodes/chapters/books)
+- [x] Streaming (HTTP Range for video, page/file serving for manga/books) + progress tracking + library scan
 
 ## Quickstart
 

@@ -32,6 +32,7 @@ http-body-util = "0.1"
 validator = { version = "0.18", features = ["derive"] }
 rand = "0.8"
 async-trait = "0.1"
+walkdir = "2"
 
 [dev-dependencies]
 axum-test = "15"
